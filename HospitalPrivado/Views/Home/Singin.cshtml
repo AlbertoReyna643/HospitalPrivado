@@ -1,0 +1,113 @@
+﻿@{
+    ViewBag.Title = "Singin";
+}
+@Styles.Render("../Content/mystyles/styles.css")
+@Styles.Render("~/Content/css")
+
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-5">
+            <img class="img-fluid" src="../Content/img/iconos/adduser2.png" alt="Alternate Text" width="75px" />
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-6">
+            <label>Registrate</label>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-3 col-sm-6">
+            <label>Nombre(s):</label>
+            <input class="form-control" type="text" name="nomForm" value="" placeholder="Nombres(s)" />
+        </div>
+        <div class="form-group col-md-3 col-sm-6">
+            <label>Apellido Paterno:</label>
+            <input class="form-control" type="text" name="nomForm" value="" placeholder="Apellido Paterno" />
+        </div>
+        <div class="form-group col-md-3 col-sm-6">
+            <label>Apellido Materno:</label>
+            <input class="form-control" type="text" name="nomForm" value="" placeholder="Apellido Materno" />
+        </div>
+        <div class="form-group col-md-3 col-sm-6">
+            <label>CURP:</label>
+            <input class="form-control" type="text" name="nomForm" value="" placeholder="CURP" />
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-3 col-sm-6">
+            <label>Edad:</label>
+            <input class="form-control" type="text" name="name" value="" placeholder="Edad" />
+        </div>
+        <div class="form-group col-md-3 col-sm-6">
+            <label>Fecha de Nacimiento:</label>
+            <input class="form-control" type="date" name="name" value="" />
+        </div>
+        <div class="form-group col-md-3 col-sm-6">
+            <label>Estado:</label>
+            <input class="form-control" type="text" name="name" value="" placeholder="Estado" />
+        </div>
+        <div class="form-group col-md-3 col-sm-6">
+            <label>Ciudad o Municipio:</label>
+            <input class="form-control" type="email" name="name" value="" placeholder="Email" />
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-3 col-sm-6">
+            <label>Domicilio:</label>
+            <input class="form-control" type="text" name="name" value="" placeholder="Edad" />
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <label>Correo Electrónico:</label>
+            <input class="form-control" type="email" name="name" value="" placeholder="Email" />
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <label>Contraseña:</label>
+            <input class="form-control" type="password" name="name" value="" placeholder="***************" />
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <button type="button" class="btn btn-success">Registrar</button>
+            <button type="reset" class="btn btn-danger">Limpiar</button>
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal" data-whatever="">¿Ya tienes cuenta?</button>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="../Content/img/iconos/login1.png" class="img-fluid" width="75px">
+                <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesión</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="form-login">
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label class="control-label" for="emailForm">Correo Electrónico</label>
+                            <input type="text" class="form-control my-input" placeholder="Email" name="" id="emailForm">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="passForm">Contraseña:</label>
+                            <input type="password" class="form-control my-input" placeholder="***************" name="" id="passForm">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-success" name="name" value="Ingresar" />
+                            <input type="button" class="btn btn-secondary" data-dismiss="modal" value="Cerrar" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

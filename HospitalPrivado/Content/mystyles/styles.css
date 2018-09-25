@@ -1,0 +1,40 @@
+.my-input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #296eff;
+    border-radius: 3px;
+    margin:auto;
+}
+.btn {
+    margin: auto;
+    display: block;
+}
+.control-label {
+    margin: auto;
+    display: block;
+}
+.my-input:focus {
+    border-bottom: 2px solid #12860a;
+}
+.badge{
+    margin: auto;
+    display: block;
+    width: 80%;
+}
+.btn {
+    width: 100%;
+}
+.form-login {
+    width: 40%;
+    --background-color: rgba(000,0,0,0.6);
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+}
+.img-fluid{
+    margin: auto;
+    display: block;
+}
+.iii{
+    width: 1500px;
+}

@@ -15,16 +15,37 @@ namespace HospitalPrivado.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Informacion del Hospital";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Contacto()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Contacto de Pagina";
 
             return View();
         }
-    }
+
+        public ActionResult Singin()
+        {
+            ViewBag.Message = "Registrate para tener beneficios";
+
+            return View();
+        }
+
+        public ActionResult Login()
+        {
+            ViewBag.Message = "Sigue los beneficios que tenemos para ti";
+
+            return View();
+        }
+
+		public ActionResult inicio()
+		{
+			ViewBag.Message = "Administrador";
+
+			return View();
+		}
+	}
 }
