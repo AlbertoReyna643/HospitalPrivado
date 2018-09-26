@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Data.Entity;
 using System.ComponentModel.DataAnnotations;
 
-namespace HospitalPrivado.Models{
-
-	public class Administradores{
+namespace HospitalPrivado.Models
+{
+	public class Pacientes{
 		[Key]
 		public int id { get; set; }
 		[Required]
@@ -22,6 +21,14 @@ namespace HospitalPrivado.Models{
 		public string fecha_de_nacimiento { get; set; }
 		[Required]
 		public string correo_electronico { get; set; }
+		[Required]
+		public string curp { get; set; }
+		[Required]
+		public string estado_ciudad { get; set; }
+		[Required]
+		public string municipio { get; set; }
+		[Required]
+		public string domicilio { get; set; }
 		[Required]
 		public string contrasena { get; set; }
 	}

@@ -1,4 +1,4 @@
-﻿@model HospitalPrivado.Models.Administradores
+﻿@model HospitalPrivado.Models.Pacientes
 
 @{
     ViewBag.Title = "Details";
@@ -8,7 +8,7 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Administradores</h4>
+    <h4>Pacientes</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -60,13 +60,45 @@
         </dd>
 
         <dt>
+            @Html.DisplayNameFor(model => model.curp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.curp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estado_ciudad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estado_ciudad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.municipio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.municipio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.domicilio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.domicilio)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.contrasena)
         </dt>
-        <!--
-    <dd>
-        @Html.DisplayFor(model => model.contrasena)
-    </dd>
-    -->
+
+        <dd>
+            @Html.DisplayFor(model => model.contrasena)
+        </dd>
+
     </dl>
 </div>
 <p>

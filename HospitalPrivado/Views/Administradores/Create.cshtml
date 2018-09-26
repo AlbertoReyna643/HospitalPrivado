@@ -13,68 +13,76 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>Administradores</h4>
+        <h4>Agregar nuevos Administradores</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
-            @Html.LabelFor(model => model.nombre, htmlAttributes: new { @class = "control-label col-md-2" })
+            <label for="" class="control-label col-md-2">Nombre(s):</label>
+            <!--@Html.LabelFor(model => model.nombre, htmlAttributes: new { @class = "control-label col-md-2" })-->
             <div class="col-md-10">
-                @Html.EditorFor(model => model.nombre, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.nombre, new { htmlAttributes = new { @class = "form-control", @PlaceHolder = "Nombre(s)" } })
                 @Html.ValidationMessageFor(model => model.nombre, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.apellido_paterno, htmlAttributes: new { @class = "control-label col-md-2" })
+            <label for="" class="control-label col-md-2">Apellido Paterno:</label>
+            <!--@Html.LabelFor(model => model.apellido_paterno, htmlAttributes: new { @class = "control-label col-md-2" })-->
             <div class="col-md-10">
-                @Html.EditorFor(model => model.apellido_paterno, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.apellido_paterno, new { htmlAttributes = new { @class = "form-control", @PlaceHolder = "Apellido Paterno" } })
                 @Html.ValidationMessageFor(model => model.apellido_paterno, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.apellido_materno, htmlAttributes: new { @class = "control-label col-md-2" })
+            <label for="" class="control-label col-md-2">Apellido Materno:</label>
+            <!--@Html.LabelFor(model => model.apellido_materno, htmlAttributes: new { @class = "control-label col-md-2" })-->
             <div class="col-md-10">
-                @Html.EditorFor(model => model.apellido_materno, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.apellido_materno, new { htmlAttributes = new { @class = "form-control", @PlaceHolder = "Apellido Materno" } })
                 @Html.ValidationMessageFor(model => model.apellido_materno, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.edad, htmlAttributes: new { @class = "control-label col-md-2" })
+            <label for="" class="control-label col-md-2">Edad:</label>
+            <!--@Html.LabelFor(model => model.edad, htmlAttributes: new { @class = "control-label col-md-2" })-->
             <div class="col-md-10">
-                @Html.EditorFor(model => model.edad, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.edad, new { htmlAttributes = new { @class = "form-control", @PlaceHolder = "Edad" } })
                 @Html.ValidationMessageFor(model => model.edad, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.fecha_de_nacimiento, htmlAttributes: new { @class = "control-label col-md-2" })
+            <label for="" class="control-label col-md-2">Fecha de nacimiento:</label>
+            <!--@Html.LabelFor(model => model.fecha_de_nacimiento, htmlAttributes: new { @class = "control-label col-md-2" })-->
             <div class="col-md-10">
-                @Html.EditorFor(model => model.fecha_de_nacimiento, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.fecha_de_nacimiento, new { htmlAttributes = new { @class = "form-control", @PlaceHolder = "Fecha de Nacimiento" } })
                 @Html.ValidationMessageFor(model => model.fecha_de_nacimiento, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.correo_electronico, htmlAttributes: new { @class = "control-label col-md-2" })
+            <label for="" class="control-label col-md-2">Correo Electrónico:</label>
+            <!--@Html.LabelFor(model => model.correo_electronico, htmlAttributes: new { @class = "control-label col-md-2" })-->
             <div class="col-md-10">
-                @Html.EditorFor(model => model.correo_electronico, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.correo_electronico, new { htmlAttributes = new { @class = "form-control", @PlaceHolder = "Correo Electronico" } })
                 @Html.ValidationMessageFor(model => model.correo_electronico, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.contrasena, htmlAttributes: new { @class = "control-label col-md-2" })
+            <label for="" class="control-label col-md-2">Contraseña:</label>
+            <!--@Html.LabelFor(model => model.contrasena, htmlAttributes: new { @class = "control-label col-md-2" })-->
             <div class="col-md-10">
-                @Html.EditorFor(model => model.contrasena, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.contrasena, new { htmlAttributes = new { @class = "form-control", @PlaceHolder = "************"} })
                 @Html.ValidationMessageFor(model => model.contrasena, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="reset" value="Reset" class="btn btn-danger" />
             </div>
         </div>
     </div>

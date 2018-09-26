@@ -1,18 +1,14 @@
-﻿@model IEnumerable<HospitalPrivado.Models.Administradores>
+﻿@model IEnumerable<HospitalPrivado.Models.Pacientes>
 
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index Administradores</h2>
-
-<div class="img-responsive">
-    <img src="../Content/img/doctores.jpg" class="" style="margin:auto; display:block" width="50%" />
-</div>
+<h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Crear nuevo Administrador", "Create")
+    @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>
@@ -33,6 +29,18 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.correo_electronico)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.curp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estado_ciudad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.municipio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.domicilio)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.contrasena)
@@ -60,15 +68,25 @@
         <td>
             @Html.DisplayFor(modelItem => item.correo_electronico)
         </td>
-        <!--
-    <td>
-        @Html.DisplayFor(modelItem => item.contrasena)
-    </td>
-    -->
         <td>
-            @Html.ActionLink("Editar", "Edit", new { id = item.id }) |
-            @Html.ActionLink("Detalles", "Details", new { id = item.id }) |
-            @Html.ActionLink("Eliminar", "Delete", new { id = item.id })
+            @Html.DisplayFor(modelItem => item.curp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estado_ciudad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.municipio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.domicilio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.contrasena)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
         </td>
     </tr>
 }
