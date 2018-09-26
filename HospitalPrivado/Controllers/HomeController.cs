@@ -41,9 +41,9 @@ namespace HospitalPrivado.Controllers
             return View();
         }
 
-		public ActionResult inicio()
+		public ActionResult Beneficios()
 		{
-			ViewBag.Message = "Administrador";
+			ViewBag.Message = "Los beneficios que los pacientes tienen";
 
 			return View();
 		}

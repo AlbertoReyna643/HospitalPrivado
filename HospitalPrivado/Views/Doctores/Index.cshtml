@@ -5,7 +5,18 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Index Doctores</h2>
+
+<div class="img-responsive">
+    <img src="../Content/img/doctores.jpg" class="top-izq" width="40%" />
+</div>
+
+
+<p>
+    @Html.ActionLink("Regresar", "../Home/Index")
+</p>
+
+<br />
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -54,53 +65,54 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.nombre)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.apellido_paterno)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.apellido_materno)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.edad)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.fecha_de_nacimiento)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.correo_electronico)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.curp)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.estado_ciudad)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.municipio)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.domicilio)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.cedula_profesional)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.especialidad)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.contrasena)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.id })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.apellido_paterno)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.apellido_materno)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.edad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_de_nacimiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.correo_electronico)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.curp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.estado_ciudad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.municipio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.domicilio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cedula_profesional)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.especialidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.contrasena)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.id })
+            </td>
+        </tr>
+    }
 
 </table>
